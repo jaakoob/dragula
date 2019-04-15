@@ -101,6 +101,10 @@ dragula(containers, {
   invalid: function (el, handle) {
     return false; // don't prevent any drags from initiating by default
   },
+  nodeCopy: function (node) {
+    return node.cloneNode(true); // specifiy an own way how the node is cloned
+    // maybe you want to modiy it
+  },
   direction: 'vertical',             // Y axis is considered when determining where an element would be dropped
   copy: false,                       // elements are moved by default, not copied
   copySortSource: false,             // elements in copy-source containers can be reordered
