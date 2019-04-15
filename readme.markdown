@@ -104,6 +104,7 @@ dragula(containers, {
   nodeCopy: function (node) {
     return node.cloneNode(true); // specifiy an own way how the node is cloned
     // maybe you want to modiy it
+    // just works if copy ist set to true
   },
   direction: 'vertical',             // Y axis is considered when determining where an element would be dropped
   copy: false,                       // elements are moved by default, not copied
