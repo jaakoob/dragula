@@ -493,7 +493,7 @@ function dragula (initialContainers, options) {
   }
 
   function copyNode (node) {
-    return typeof o.nodeCopy === 'boolean' ? node.cloneNode(true) : o.nodeCopy(item);
+    return typeof o.nodeCopy === 'boolean' ? node.cloneNode(true) : o.nodeCopy(node);
   }
 }
 
